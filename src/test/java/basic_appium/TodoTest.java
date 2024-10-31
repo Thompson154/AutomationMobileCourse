@@ -22,7 +22,7 @@ public class TodoTest {
     public void openApp() throws MalformedURLException {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("appium:deviceNam", "Nice");
+        capabilities.setCapability("appium:deviceName", "Nice");
         capabilities.setCapability("appium:platformVersion", "15.0");
         capabilities.setCapability("appium:appPackage", "com.vrproductiveapps.whendo");
         capabilities.setCapability("appium:appActivity", "com.vrproductiveapps.whendo.ui.HomeActivity");
@@ -46,7 +46,7 @@ public class TodoTest {
         driver.findElement(By.xpath("//android.widget.TextView[@content-desc=\"Save\"]")).click();
         Thread.sleep(5000);
         String Title = driver.findElement(By.xpath("//android.widget.TextView[@resource-id=\"com.vrproductiveapps.whendo:id/home_list_item_text\"]")).getText();
-        Assertions.assertEquals(TITLE,TITLE, "Error, al crear el task");
+        Assertions.assertEquals(TITLE,Title, "Error, al crear el task");
     }
 }
 

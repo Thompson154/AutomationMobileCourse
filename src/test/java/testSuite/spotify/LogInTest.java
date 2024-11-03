@@ -11,6 +11,8 @@ public class LogInTest extends BaseSpotify {
         googleAccountsSection.EnableAccount.click();
         Thread.sleep(5000);
 
+        homeScreen.laterButton.click();
+
         Assertions.assertTrue(headerSection.Perfil.isControlDisplayed());
     }
 }

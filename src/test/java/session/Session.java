@@ -8,7 +8,7 @@ public class Session {
 
     private AppiumDriver device;
     private Session(){
-        device = FactoryDevices.make("cloud").createDriver();
+        device = FactoryDevices.make("android").createDriver();
     }
 
     public static Session getInstance(){

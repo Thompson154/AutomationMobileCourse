@@ -13,6 +13,9 @@ public class BaseSpotify {
     FooterSeccion footerSection = new FooterSeccion();
     LibraryScreen libraryScreen = new LibraryScreen();
     PLayListScreen pLayListScreen = new PLayListScreen();
+    OptionsPlaylistSection optionsPlaylistSection = new OptionsPlaylistSection();
+    OptionsPlaylistWithoutMusicSection optionsPlaylistWithoutMusicSection = new OptionsPlaylistWithoutMusicSection();
+    EditPLaylistScreen editPLaylistScreen = new EditPLaylistScreen();
 
     @BeforeEach
     public void before() {}

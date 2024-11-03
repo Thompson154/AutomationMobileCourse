@@ -7,6 +7,9 @@ import org.openqa.selenium.By;
 public class PLayListScreen {
 
     public Button addMusic = new Button(By.xpath("//android.widget.Button[@resource-id=\"com.spotify.music:id/action_button\"]"));
+    public Button optionsPlaylistWithoutMusic = new Button(By.xpath("//androidx.compose.ui.platform.ComposeView[@resource-id=\"com.spotify.music:id/actions_slot\"]/android.view.View/android.view.View/android.widget.Button"));
+    public Button optionsPlaylist = new Button(By.xpath("//androidx.compose.ui.platform.ComposeView[@resource-id=\"com.spotify.music:id/actions_slot\"]/android.view.View/android.view.View[2]/android.widget.Button"));
+    public Button closePlaylits = new Button(By.xpath("//android.widget.Button[@content-desc=\"Close\"]"));
 
     public void addNumberMusic(int numbersMusic) throws InterruptedException {
         addMusic.click();
